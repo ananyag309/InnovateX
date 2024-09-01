@@ -1,0 +1,232 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('C:\Users\DELL\Desktop\New folder\admin-Portal\src\assests\istockphoto-458078517-612x612.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(240, 240, 245, 0.5); /* Fallback color with 50% transparency */
+  background-blend-mode: overlay;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(15, 1, 1, 0.8); /* Semi-transparent white background */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.header-column {
+  flex: 1; /* Each column takes equal width */
+  display: flex;
+  align-items: center;
+}
+
+.header-column.logo-column {
+  justify-content: flex-start;
+}
+
+.header-column.nav-column {
+  justify-content: center;
+}
+
+.header-column.profile-column {
+  justify-content: flex-end;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #ff6f61;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #ff6f61;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid #ff6f61;
+}
+
+.profile-name {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  margin-left: 10px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow.open {
+  transform: rotate(-135deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 160px;
+  color: #333;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #f4f4f4;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f9f9f9;
+}
+
+.dashboard, .complaints {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stats-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.card p {
+  font-size: 28px;
+  margin: 15px 0 0;
+  color: #ff6f61;
+}
+
+.chart-container {
+  margin-top: 30px;
+}
+
+.complaints {
+  margin-top: 20px;
+}
+
+.filters {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filters label {
+  font-weight: 500;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 20px;
+}
+
+table th {
+  background-color: #ff6f61;
+  color: white;
+  font-weight: 600;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+button:nth-of-type(1) {
+  background-color: #28a745;
+}
+
+button:nth-of-type(2) {
+  background-color: #dc3545;
+}
